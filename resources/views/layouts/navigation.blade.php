@@ -24,12 +24,7 @@
                         {{ __('Create Post') }}
                     </x-nav-link>
                     @endauth
-                    
-                    @auth
-                    <x-nav-link :href="route('services')" :active="request()->routeIs('services.create')">
-                        {{ __('Create Services') }}
-                    </x-nav-link>
-                    @endauth
+                
                 </div>
             </div>
 

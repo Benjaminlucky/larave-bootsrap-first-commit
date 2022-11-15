@@ -2143,17 +2143,51 @@ body {
                     width: 100%;
                     margin-bottom: 3rem;
 
+                    .blogModificationBtn {
+                        display: flex;
+                        margin-bottom: 1.5rem;
+
+                        .bEditBtn {
+                            background: #ff0000;
+                            color: $white;
+                            padding: 1rem;
+                            margin-right: 2rem;
+
+                           
+
+                            input{
+                                color: $white;
+                                font-weight: 600;
+                            }
+                        }
+
+                        .bDeleteBtn {
+                            background: #03A64A;
+                            color: $white;
+                            padding: 1rem;
+                            margin-right: 1rem;
+
+                            a {
+                                color: $white;
+                                font-weight: 600;
+                            }
+                            
+                        }
+                    }
+
                     .bPostImg {
                         width: 100%;
                         overflow: hidden;
                         background-size: cover;
+                        object-fit: cover;
                         
 
                         a {
 
                             img {
                                 transition: all 1s ease;
-                                max-width: 100%;
+                                width: 100%;
+                                object-fit: cover!important;
                                 height: auto;
 
 
@@ -2212,7 +2246,7 @@ body {
                         margin-top: 1.5rem;
 
                         a{
-                            font-size: 1.2rem;
+                            font-size: 2rem;
                             color: $coolblack;
                             font-weight: 600;
                             transition: all 1s ease;
@@ -2222,6 +2256,12 @@ body {
                                 color: $primary;
                                 transition: all 1s ease;
                             }
+                        }
+
+                        h2{
+                            font-size: 2rem;
+                            color: $coolblack;
+                            font-weight: 600;
                         }
                     }
 

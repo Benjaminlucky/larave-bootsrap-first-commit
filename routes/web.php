@@ -45,7 +45,29 @@ Route::post('/blog', [BlogController::class, 'store'])->name('blog.store');
 
 
 //This will link to create post
-Route::get('/blog/create', [BlogController::class, 'create'])->name('blog.create');
+Route::get('/blog/create', [BlogController::class, 'create'])->name('blog.create')->middleware('auth');
+
+
+
+
+
+//This will link to showing single blog Post
+Route::get('/blog/{post:slug}', [BlogController::class, 'show'])->name('blog.show');
+
+
+
+
+//This will edit single blog Post
+Route::get('/blog/{post}/edit', [BlogController::class, 'edit'])->name('blog.edit');
+
+
+//This will delete single post
+Route::delete('/blog/{post}', [BlogController::class, 'delete'])->name('blog.destroy');
+
+
+
+//This will update single blog Post
+Route::put('/blog/{post}', [BlogController::class, 'update'])->name('blog.update');
 
 
 

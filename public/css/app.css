@@ -27229,14 +27229,42 @@ body {
   width: 100%;
   margin-bottom: 3rem;
 }
+.blog-sectionMain .blogWrapperMain .col-lg-7 .mainBlogContent .blogPost .blogModificationBtn {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+.blog-sectionMain .blogWrapperMain .col-lg-7 .mainBlogContent .blogPost .blogModificationBtn .bEditBtn {
+  background: #ff0000;
+  color: #ffffff;
+  padding: 1rem;
+  margin-right: 2rem;
+}
+.blog-sectionMain .blogWrapperMain .col-lg-7 .mainBlogContent .blogPost .blogModificationBtn .bEditBtn input {
+  color: #ffffff;
+  font-weight: 600;
+}
+.blog-sectionMain .blogWrapperMain .col-lg-7 .mainBlogContent .blogPost .blogModificationBtn .bDeleteBtn {
+  background: #03A64A;
+  color: #ffffff;
+  padding: 1rem;
+  margin-right: 1rem;
+}
+.blog-sectionMain .blogWrapperMain .col-lg-7 .mainBlogContent .blogPost .blogModificationBtn .bDeleteBtn a {
+  color: #ffffff;
+  font-weight: 600;
+}
 .blog-sectionMain .blogWrapperMain .col-lg-7 .mainBlogContent .blogPost .bPostImg {
   width: 100%;
   overflow: hidden;
   background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .blog-sectionMain .blogWrapperMain .col-lg-7 .mainBlogContent .blogPost .bPostImg a img {
   transition: all 1s ease;
-  max-width: 100%;
+  width: 100%;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
   height: auto;
 }
 .blog-sectionMain .blogWrapperMain .col-lg-7 .mainBlogContent .blogPost .bPostImg a img:hover {
@@ -27273,7 +27301,7 @@ body {
   margin-top: 1.5rem;
 }
 .blog-sectionMain .blogWrapperMain .col-lg-7 .mainBlogContent .blogPost .blogPostTitle a {
-  font-size: 1.2rem;
+  font-size: 2rem;
   color: #262626;
   font-weight: 600;
   transition: all 1s ease;
@@ -27281,6 +27309,11 @@ body {
 .blog-sectionMain .blogWrapperMain .col-lg-7 .mainBlogContent .blogPost .blogPostTitle a:hover {
   color: #3e56aa;
   transition: all 1s ease;
+}
+.blog-sectionMain .blogWrapperMain .col-lg-7 .mainBlogContent .blogPost .blogPostTitle h2, .blog-sectionMain .blogWrapperMain .col-lg-7 .mainBlogContent .blogPost .blogPostTitle .h2 {
+  font-size: 2rem;
+  color: #262626;
+  font-weight: 600;
 }
 .blog-sectionMain .blogWrapperMain .col-lg-7 .mainBlogContent .blogPost .blogPostContent {
   width: 100%;
